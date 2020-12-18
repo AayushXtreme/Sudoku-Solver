@@ -1,7 +1,7 @@
 # Sudoku Solver
 
 - Minimal output 🌈 
-- Works on **Linux**, **MacOS**, and **Windows**
+- Efficient and fast sudoku detector and solver
 <img src='https://raw.githubusercontent.com/lakhaniaayush/Sudoku-Solver/main/temp/res.JPG'>
 <img src="https://raw.githubusercontent.com/lakhaniaayush/Sudoku-Solver/main/temp/sudoku.gif" align="right">
 <br>
