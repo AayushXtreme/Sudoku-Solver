@@ -6,6 +6,14 @@
 <img src="https://raw.githubusercontent.com/lakhaniaayush/Sudoku-Solver/main/temp/sudoku.gif" align="right">
 <br>
 
+## libraries
+```
+- Tensorflow
+- opencv-python
+- Numpy
+- Skimage
+- py-sudoku
+```
 
 ## Usage
 ```
