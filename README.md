@@ -2,8 +2,8 @@
 
 - Minimal output 🌈 
 - Works on **Linux**, **MacOS**, and **Windows**
-<img src='https://raw.githubusercontent.com/lakhaniaayush/sudoku_vision/master/temp/res.JPG'>
-<img src="https://raw.githubusercontent.com/lakhaniaayush/sudoku_vision/master/temp/sudoku.gif" align="right">
+<img src='https://raw.githubusercontent.com/lakhaniaayush/Sudoku-Solver/main/temp/res.JPG'>
+<img src="https://raw.githubusercontent.com/lakhaniaayush/sudoku-Solver/master/temp/sudoku.gif" align="right">
 <br>
 
 
