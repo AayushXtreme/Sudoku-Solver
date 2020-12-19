@@ -5,7 +5,7 @@ import tensorflow as tf
 from skimage.segmentation import clear_border
 
 
-# load model architecture
+# load model architecture and model weights
 with open('models/model.json', 'r') as file:
         json_file =  file.read()
 
@@ -20,6 +20,7 @@ def preprocess(im):
     im = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
     thresh = cv2.threshold(im, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)[1]
     cell = clear_border(thresh)
+    # processing img for neural network 
     digit = cell.astype("float") / 255.0
     digit = tf.keras.preprocessing.image.img_to_array(digit)
     digit = np.expand_dims(digit, axis=0)
