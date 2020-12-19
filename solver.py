@@ -1,5 +1,4 @@
 ## puzzle grid detection using opencv
-from numpy.lib.shape_base import dsplit
 from extract import extract_puzzle
 from sudoku import Sudoku
 import argparse
@@ -40,7 +39,7 @@ def solver(imgpath, debug=False, visualize=False):
                 textY += endY
                 # draw the result digit on the Sudoku puzzle image
                 cv2.putText(img, str(digit), (textX, textY),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 0, 0), 3)
+                    cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255, 0, 0), 3)
         # show the output image
         cv2.imshow("sudoku puzzle", orig)
         cv2.imshow("sudoku result", img)
