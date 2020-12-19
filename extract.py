@@ -36,7 +36,8 @@ def find_puzzle(img, draw_contours=False):
 
             epsilon = 0.04*cv2.arcLength(cnt, True)
             cnt = cv2.approxPolyDP(cnt, epsilon, True)
-
+            
+            # Searching for rectangle (more than 3 cnts)
             if len(cnt) > 3:
                 # Gets the 4 corners of the object (assume it's a square)
                 topleft =       min(cnt, key=lambda x: x[0,0]+x[0,1])
@@ -82,6 +83,7 @@ def find_puzzle(img, draw_contours=False):
 ## extracting (OCR) digits from the image
 # returns a matrix of digits
 def extract_digits(puzzle, debug=False):
+    # divide the cropped image into 81 small squares
     y = round(puzzle.shape[0] / 9)
     x = round(puzzle.shape[1] / 9)
     coords = []
@@ -94,8 +96,11 @@ def extract_digits(puzzle, debug=False):
             endY = (i+1)*y
             row.append((startX, startY, endX, endY))
             cell = puzzle[startY:endY, startX:endX]
+            
+            # ocr on 81 squares for digit recognition
             digit = ocr(cell, debug)
             grid[i][j] = digit
+        # recording coordinates for each cell
         coords.append(row)
     
 # return puzzle grid
