@@ -2,10 +2,10 @@
 from extract import extract_puzzle
 from sudoku import Sudoku
 import argparse
-import cv2
+import cv2, os
 
 parser = argparse.ArgumentParser(description="Sudoku solver using image")
-parser.add_argument('--path', '-p', help="Path of image containing puzzle")
+parser.add_argument('--path', '-p', nargs="+", help="Path of image containing puzzle")
 parser.add_argument('--debug', '-d', action='store_true', help="helps in debugging")
 parser.add_argument('--visualize', '-v', action='store_true', help="visualize puzzle")
 
@@ -54,6 +54,8 @@ def solver(imgpath, debug=False, visualize=False):
     
 # driver code
 if __name__ == '__main__':
-    grid = solver(args.path, args.debug, args.visualize)
+    for file in args.path:
+        grid = solver(file, args.debug, args.visualize)
+
 
 

@@ -1,4 +1,4 @@
-import cv2
+import cv2, sys
 import numpy as np
 from imutils.perspective import four_point_transform
 from classifier import ocr
@@ -119,10 +119,11 @@ def extract_puzzle(imgPath, debug=False):
             return cropped, [coords, grid]
         else:
             print("Puzzle not found!!!")
-            return None
+            sys.exit()
     else:
         print("No image found!!!")
-        return None
+        sys.exit()
+
 
     
 
