@@ -5,7 +5,7 @@
 <img src='https://raw.githubusercontent.com/lakhaniaayush/Sudoku-Solver/main/temp/res.JPG'>
 <img src="https://raw.githubusercontent.com/lakhaniaayush/Sudoku-Solver/main/temp/sudoku.gif" align="right">
 <br>
-
+<br>
 ## Demo
 - Check out this demo
 https://colab.research.google.com/drive/1hpsPSYv03LQSK-tuN4666ET1Jco2l68Z?usp=sharing
