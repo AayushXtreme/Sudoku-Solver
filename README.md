@@ -8,10 +8,9 @@
 <br>
 
 ## Demo
-```
 - Check out this demo
 [a link](https://colab.research.google.com/drive/1hpsPSYv03LQSK-tuN4666ET1Jco2l68Z?usp=sharing)
-```
+
 
 ## libraries
 ```
