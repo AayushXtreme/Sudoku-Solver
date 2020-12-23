@@ -8,7 +8,7 @@
 <br>
 
 ## Demo
-- [Check out this demo](https://colab.research.google.com/drive/1hpsPSYv03LQSK-tuN4666ET1Jco2l68Z?usp=sharing)
+- Check out this [Colab Demo](https://colab.research.google.com/drive/1hpsPSYv03LQSK-tuN4666ET1Jco2l68Z?usp=sharing)
 
 
 ## libraries
